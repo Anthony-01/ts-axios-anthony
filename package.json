@@ -1,6 +1,6 @@
 {
   "name": "ts-axios-anthony",
-  "version": "",
+  "version": "1.0.1",
   "main": "dist/axios.umd.js",
   "module": "dist/axios.es5.js",
   "typings": "dist/types/index.d.ts",
