@@ -9,6 +9,8 @@ export function transform(data: any, headers: any, fns?: AxiosTransformer | Axio
     fns = [fns];
   }
   fns.forEach(fn => {
-    fn(data, headers)
-  })
+    data = fn(data, headers)
+  });
+  return data;
+
 }

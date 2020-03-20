@@ -50,8 +50,11 @@ export function xhr(config: AxiosRequestConfig): AxiosPromise {
     function addEvent() {
       xhr.onreadystatechange = function handleLoad() {
         if (xhr.readyState !== 4) {
-          reject(null);
+          // reject(null);
           return;
+        }
+        if (xhr.status === 0) {
+            return
         }
         let responseHeader = parseHeader(xhr.getAllResponseHeaders());
         let responseData = responseType === 'text' ? xhr.responseText : xhr.response;

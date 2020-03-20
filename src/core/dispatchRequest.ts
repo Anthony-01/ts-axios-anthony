@@ -12,7 +12,6 @@ export default function dispatchRequest(config: AxiosRequestConfig): AxiosPromis
   processConfig(config);
   ifThrowRequested(config);
   return xhr(config).then(res => {
-
     return transformResponseData(res);
   });
 }
@@ -21,9 +20,8 @@ export default function dispatchRequest(config: AxiosRequestConfig): AxiosPromis
 
 function processConfig(config: AxiosRequestConfig): void {
   config.url = transformURL(config);
-  // config.headers = transformRequestHeader(config);
-  // config.data = transformRequestBody(config.data);
-  config.data = transform(config.data, config.header, config.transformRequest);
+
+  config.data = transform(config.data, config.headers, config.transformRequest);
   config.headers = flattenHeaders(config.headers, config.method!);
 }
 

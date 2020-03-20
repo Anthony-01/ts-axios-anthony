@@ -13,6 +13,7 @@
     "url": ""
   },
   "scripts": {
+    "dev": "node examples/server.js",
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",
     "test:prod": "npm run lint && npm run test -- --no-cache",
@@ -52,17 +53,26 @@
     ]
   },
   "dependencies": {
+
+  },
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "ts-loader": "^6.2.1",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0",
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-json": "^4.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "@types/jest": "^25.1.4",
-    "@types/node": "^10.17.17",
+    "@types/node": "^13.9.2",
     "jest": "^23.6.0",
     "lodash.camelcase": "^4.3.0",
     "rollup-plugin-sourcemaps": "^0.5.0",
     "rollup-plugin-typescript2": "^0.26.0",
     "ts-jest": "^25.2.1",
     "typedoc": "^0.12.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0"
   }
 }
