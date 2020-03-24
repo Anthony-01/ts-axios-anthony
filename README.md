@@ -1,7 +1,5 @@
 # ts-axios-anthony
 a lib for typescript to use axios
-# 0.系列文章
-[1.使用Typescript重构axios(一)——写在最前面](https://www.cnblogs.com/wangjiachen666/p/11234163.html)
 
 # 1.前言
 
@@ -61,4 +59,8 @@ npm run dev
 
 # 发布到npm
 npm run pub
+```
+# 5.使用npm安装ts-axios-anthony
+```bash
+npm install ts-axios-anthony
 ```
