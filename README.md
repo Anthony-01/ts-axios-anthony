@@ -22,7 +22,7 @@ a lib for typescript to use axios
 - Automatic transforms for JSON data
 - Client side support for protecting against [XSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery)
 
-这次重构，我们只实现官方支持的8个Features中的7个，其中axios在node中的应用不打算实现，因为这部分在日常使用中相对较少（其实是因为懒，逃~）。
+这次重构，我们只实现官方支持的8个Features中的7个，其中axios在node中的应用不打算实现，因为这部分在日常使用中相对较少。
 
 # 3.目录介绍
 
@@ -35,7 +35,7 @@ a lib for typescript to use axios
 ├─tsconfig.json       // TypeScript 编译配置文件
 ├─tslint.json         // TypeScript lint 文件
 ├─examples            // 每个功能点的demo
-├─server              // 服务端源码
+├─test                // 测试代码（待完善）
 └─src                 // 源码目录
     ├─axios.ts
     ├─defaultes.ts  
@@ -48,7 +48,7 @@ a lib for typescript to use axios
 
 ```bash
 # 克隆项目到本地
-git clone https://github.com/wangjiachen199366/ts-axios.git
+git clone git@github.com:Anthony-01/ts-axios-anthony.git
 
 # 进入项目目录
 cd ts-axios
@@ -56,6 +56,9 @@ cd ts-axios
 # 安装依赖
 npm install
 
-# 同时打开客户端和服务端
-npm run server | npm start
+# 开启调试模式
+npm run dev
+
+# 发布到npm
+npm run pub
 ```
