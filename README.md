@@ -3,7 +3,12 @@ a lib for typescript to use axios
 
 # 1.前言
 
-俗话说：检验学习成果最直接的方式就是造论子。本系列文章是博主在学习了`TypeScript`之后，为了检验自己的学习成果，萌生出造一个轮子试试的想法。由于是第一次造轮子，所以想选择一个常用，易于理解，并且自己较熟悉的轮子。网上搜索一番，发现前后端交互神器`axios`造的人挺多的，并且提供了很多重构思路，为了能够站在巨人的肩膀上，并且`axios`也刚好符合上面提到的三个要求，那就是它啦，使用`TypeScript`重构`axios`。
+本项目脱胎于黄轶老师在慕课网发布的项目（基于TypeScript从零重构axios）：
+
+[基于TypeScript从零重构axios](https://coding.imooc.com/class/330.html)
+
+
+经过几个库的更新，原项目代码部分依赖已经不可用，于是重新搭建整个项目，作为自己的学习过程。
 
 # 2.需求分析
 
@@ -52,6 +57,7 @@ git clone git@github.com:Anthony-01/ts-axios-anthony.git
 cd ts-axios
 
 # 安装依赖
+(国内可先 npm config set registry https://registry.npm.taobao.org)
 npm install
 
 # 开启调试模式
