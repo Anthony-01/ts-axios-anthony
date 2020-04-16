@@ -9,7 +9,7 @@
    xsrfHeaderName: "X-XSRF-TOKEN",
    headers: {
      common: {
-       'Context-Type': 'application/json, text/plain, */*'
+       'Content-Type': 'application/json, text/plain, */*'
      }
    },
    transformRequest: [function(data: any, headers: any) {
